@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: giropops
+spec:
+  containers:
+  - name: girus
+    image: nginx
+    ports:
+    - containerPort: 80
+  - name: strigus
+    image: alpine
+    args:
+    - sleep
+    - "1800"
